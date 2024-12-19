@@ -17,17 +17,17 @@ for digit in data:
 
 
 # part 1
-# part_disk = [i for i in disk]
-# while part_disk.count(-1) > 0:
-#     value = part_disk.pop()
-#     if value != -1:
-#         part_disk[part_disk.index(-1)] = value
+part_disk = [i for i in disk]
+while part_disk.count(-1) > 0:
+    value = part_disk.pop()
+    if value != -1:
+        part_disk[part_disk.index(-1)] = value
 
-# checksum = 0
-# for i in range(len(part_disk)):
-#     checksum += i * part_disk[i]
+checksum = 0
+for i in range(len(part_disk)):
+    checksum += i * part_disk[i]
 
-# print(checksum)
+print(checksum)
 
 # part 2
 
